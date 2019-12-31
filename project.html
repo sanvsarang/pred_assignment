@@ -268,6 +268,7 @@ testing &lt;- testing %&gt;%
 </div>
 <div id="out-of-sample-error" class="section level3">
 <h3>Out of Sample error</h3>
+<p>The cross validation strategy gives an estimate of out of sample error i.e. error on testing sample (training-test data in this case). The Accuracy of ~0.998 of training-train data gives the expected Accuracy of training-test data and testing data.</p>
 <pre class="r"><code>set.seed(323)
 intrain &lt;- createDataPartition(training$classe,p = 0.7, list = F)
 training_train &lt;- training[intrain,]

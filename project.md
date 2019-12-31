@@ -81,6 +81,7 @@ Apart from remoing data as described in remove data section above, no other prep
 Repeated cross validation was used while tuning the random forest model to determine the best accuracy. This is K-fold (10 fold) cross validation 3 times. For tuning data is resampled multiple times to determne which mtry parameter value for random forest is optimal to achieve the highest accuracy. mtry is the number of attributes(columns) used to construct each tree in random forest. For each repeat, 10 fold cv is applied - the training-train data is split into 10 samples and 1 sample is hold out for validating accuracy. 
 
 ### Out of Sample error
+The cross validation strategy gives an estimate of out of sample error i.e. error on testing sample (training-test data in this case). The Accuracy of ~0.998 of training-train data gives the expected Accuracy of training-test data and testing data.
 
 
 ```r
